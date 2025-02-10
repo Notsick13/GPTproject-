@@ -16,7 +16,6 @@ app.use(express.json());
 app.use('/api/orders', orderRoutes);
 app.use('/api/delivery', deliveryRoutes)
 app.use('/api/user', userRoutes);
-app.use('/api', userRoutes);
 app.use('/api/product', productRoutes);
 app.get('/', async (req, res) => {
   try {
