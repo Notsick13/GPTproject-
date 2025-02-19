@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 const deliverySchema = new mongoose.Schema({
+  
   orderId: {
     type: String,
     ref: 'Order',
@@ -22,8 +23,13 @@ const deliverySchema = new mongoose.Schema({
     enum: ['Pending'/*en attente*/, 'Shipped'/*transporté*/, 'Delivered'/*livré*/, 'Canceled'/* annuler*/ ],
     default: 'Pending',
   },
-  
+  location: {
+    lat: { type: Number, required: false },
+    lng: { type: Number, required: false },
+  }
 })
+
+
 
 const Delivery = mongoose.model('Delivery', deliverySchema)
 module.exports = Delivery

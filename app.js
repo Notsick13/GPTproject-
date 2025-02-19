@@ -8,6 +8,12 @@ const orderRoutes = require('./routes/orderRoutes');
 const bodyParser=require("body-parser");
 
 
+
+const orderRoutes = require('./routes/orderRoutes');
+const bodyParser=require("body-parser");
+const orderRoutes = require('./routes/orderRoutes');
+const bodyParser=require("body-parser");const orderRoutes = require('./routes/orderRoutes');
+const bodyParser=require("body-parser");
 dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3000;
